@@ -9,7 +9,7 @@
 
     <style>
         .result {
-            font: bold 150px/1.0 arial,sans-serif;
+            font: bold 250px/1.0 arial,sans-serif;
             text-shadow: 0px 0px 20px #001;
             filter: dropshadow(color=#001, offx=0, offy=0);
             text-align: center;
@@ -33,9 +33,13 @@
             padding-top:2cm;
             color: black;
         }
+        .bgimg{
+            background: url(./Dva.jpg);
+            background-size: cover;
+        }
     </style>
 </head>
-<body background = "Dva.jpg">
+<body class = "bgimg">
     <div class="container">
         <div class="result";>Start</div>
          <div class="details"></div>
@@ -133,8 +137,17 @@ var new_moon = ["Full moon rising",
     var click_count = 0;
     var timer = 0;
     var resnum;
+    var state = 0; 
     function make_new_rand() {
         my_random = Math.floor((Math.random() * max_num));
+    }
+    function change_text(state) {
+        if (state){
+            $('.result').css("font-size","150px");
+        } else {
+            $('.result').css("font-size","250px");
+        }
+            
     }
 
     $(function(){
@@ -143,6 +156,7 @@ var new_moon = ["Full moon rising",
             $('#make').click();
         });
         $('#make').click(function(){
+            change_text(0);
             if (timer) {
                 clearTimeout(timer);
             }
@@ -166,6 +180,7 @@ var new_moon = ["Full moon rising",
         };
         function showResult2(){
             if ($(this).hasClass('disabled')) return;
+            change_text(1);
             $('.result').html(new_moon[resnum]);
             $('.details').html(details[resnum]);
             //lock
