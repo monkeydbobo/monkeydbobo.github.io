@@ -1,11 +1,11 @@
 # Site settings
 title: 江福
 description: 人世一生霜雪，归来仍是少年
-cover: assets/images/radhakrishna.jpg
+cover: assets/images/logo.jpeg
 logo: assets/images/logo.png
-favicon: assets/images/favicon.png
+favicon: assets/images/logo.jpeg
 baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://samanyougarg.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 # Social
