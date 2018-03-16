@@ -1,6 +1,6 @@
 # Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+title: 江福
+description: 人世一生霜雪，归来仍是少年
 cover: assets/images/radhakrishna.jpg
 logo: assets/images/logo.png
 favicon: assets/images/favicon.png
@@ -9,9 +9,9 @@ url: "https://samanyougarg.com" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 # Social
-facebook: facebook
+facebook: none
 twitter: twitter
-github:  github
+github:  github.com/monkeydbobo
 
 #Additional Pages
 about: about
